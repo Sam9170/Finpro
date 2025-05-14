@@ -39,6 +39,8 @@ Welcome to **FinApp** — a robust, scalable personal finance tracker backend bu
 | Expense analytics | Planned |
 
 ## 🏗️ Project Structure
+
+```text
 FinApp_Backend/
 │
 ├── app/
