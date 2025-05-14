@@ -1,7 +1,15 @@
-from sqlmodel import SQLModel, Field
-from typing import Optional
+from pydantic import BaseModel, EmailStr, Field
 
-class User(SQLModel, table=True):
-    id: Optional[int] = Field(default=None, primary_key=True)
-    email: str
-    password_hash: str
+class UserDetails(BaseModel):
+    name: str = Field(...)
+    email: EmailStr = Field(...)
+    password: str = Field(...)
+    phone: str = Field(...)
+    city: str = Field(...)
+    state: str = Field(...)
+    zip: str = Field(...)
+    country: str = Field(...)
+
+class UserLogin(BaseModel):
+    email: EmailStr = Field(...)
+    password: str = Field(...)

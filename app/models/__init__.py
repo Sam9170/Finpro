@@ -1,3 +1,2 @@
-from .user import User
-from .transaction import Transaction
-from .bank import Bank
+# app/models/__init__.py
+from app.db.db_user import User  # This is now correct
