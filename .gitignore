@@ -1,0 +1,11 @@
+# Ignore environment and cache files
+.env
+__pycache__/
+*.py[cod]
+
+# VSCode workspace files
+.vscode/
+
+# Byte-compiled / logs
+*.log
+*.sqlite3
